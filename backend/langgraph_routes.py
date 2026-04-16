@@ -215,12 +215,9 @@ def _build_validation_response(result: Dict[str, Any]) -> Dict[str, Any]:
 # Initialize router
 router = APIRouter(prefix="/api/langgraph", tags=["langgraph"])
 
-# Model startup check (Ollama-first)
+# Model startup check
 model_provider = os.getenv("MODEL_PROVIDER", "ollama").strip().lower() or "ollama"
-default_model = os.getenv("OLLAMA_MODEL", "llama3")
-
-if model_provider != "ollama":
-    print(f"[WARNING] MODEL_PROVIDER={model_provider} requested. Forcing ollama in ModelManager.")
+default_model = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile") if model_provider == "groq" else os.getenv("OLLAMA_MODEL", "llama3")
 
 print(f"[MODEL] Provider={model_provider} default_model={default_model}")
 

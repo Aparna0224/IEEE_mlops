@@ -134,7 +134,7 @@ class OllamaModel:
 
 
 class ModelManager:
-    """Selects and uses local Ollama model without external-provider fallback."""
+    """Selects and uses models based on MODEL_PROVIDER (groq or ollama)."""
 
     def __init__(
         self,
@@ -143,14 +143,11 @@ class ModelManager:
         temperature: float = 0.3,
         max_tokens: int = 4096,
     ):
-        self.api_key = api_key
+        self.api_key = api_key or os.getenv("GROQ_API_KEY")
         self.temperature = temperature
         self.max_tokens = max_tokens
 
-        requested_provider = os.getenv("MODEL_PROVIDER", "ollama").strip().lower()
-        if requested_provider != "ollama":
-            logger.warning("[MODEL] MODEL_PROVIDER=%s requested, forcing provider=ollama", requested_provider)
-        self.provider = "ollama"
+        self.provider = os.getenv("MODEL_PROVIDER", "ollama").strip().lower()
         
         self.models = models or []
         self.current_model: Optional[str] = None
@@ -168,57 +165,56 @@ class ModelManager:
             return None
         return normalized
 
-    def _get_active_ollama_model(self) -> str:
-        env_model = self._sanitize_model_name(os.getenv("OLLAMA_MODEL"))
-        if env_model:
-            return env_model
+    def _get_active_model(self) -> str:
+        if self.provider == "groq":
+            return self._sanitize_model_name(os.getenv("GROQ_MODEL")) or "llama-3.3-70b-versatile"
+        return self._sanitize_model_name(os.getenv("OLLAMA_MODEL")) or "llama3"
 
-        registry_path = "models/model_registry.json"
-        try:
-            if os.path.exists(registry_path):
-                with open(registry_path, "r") as f:
-                    data = json.load(f)
-                    active = self._sanitize_model_name(data.get("active_model"))
-                    if active:
-                        if active.lower() == "paper-model-v1":
-                            logger.warning("[MODEL] Registry active_model=%s replaced with llama3 for Ollama compatibility", active)
-                            return "llama3"
-                        return active
-        except Exception as e:
-            logger.warning(f"Could not read from {registry_path}: {e}")
-
-        return "llama3"
-
-    def _build_ollama(self, model: Optional[str] = None, max_tokens: Optional[int] = None) -> OllamaModel:
-        target_model = self._sanitize_model_name(model) or self._get_active_ollama_model()
-        return OllamaModel(
-            model_name=target_model,
-            temperature=self.temperature,
-            max_tokens=max_tokens if max_tokens is not None else self.max_tokens
-        )
+    def _build_llm(self, model: Optional[str] = None, max_tokens: Optional[int] = None) -> Any:
+        target_model = self._sanitize_model_name(model) or self._get_active_model()
+        
+        if self.provider == "groq":
+            from langchain_groq import ChatGroq
+            if not self.api_key:
+                raise ValueError("GROQ_API_KEY is not set but MODEL_PROVIDER is groq")
+            return ChatGroq(
+                groq_api_key=self.api_key,
+                model_name=target_model,
+                temperature=self.temperature,
+                max_tokens=max_tokens if max_tokens is not None else self.max_tokens,
+            )
+        else:
+            return OllamaModel(
+                model_name=target_model,
+                temperature=self.temperature,
+                max_tokens=max_tokens if max_tokens is not None else self.max_tokens
+            )
 
     async def get_llm(self, preferred_model: Optional[str] = None) -> Any:
-        """Return a validated Ollama model client."""
-        if self.provider != "ollama":
-            raise RuntimeError(f"Unsupported provider '{self.provider}'. This service is configured for ollama only.")
-
-        model_name = self._sanitize_model_name(preferred_model) or self._get_active_ollama_model()
-        llm = self._build_ollama(model_name)
-        logger.info("[MODEL] Selecting provider=ollama model=%s", model_name)
-        await llm.ainvoke("Reply with: OK")
+        """Return a validated model client."""
+        model_name = self._sanitize_model_name(preferred_model) or self._get_active_model()
+        llm = self._build_llm(model_name)
+        logger.info("[MODEL] Selecting provider=%s model=%s", self.provider, model_name)
+        
+        try:
+            # Test invocation
+            await llm.ainvoke("Reply with: OK")
+        except Exception as e:
+            logger.warning("[MODEL] Test invocation failed: %s", e)
+            
         self.current_model = model_name
         self.current_llm = llm
         return self.current_llm
 
     async def ainvoke(self, prompt: str, preferred_model: Optional[str] = None):
-        """Invoke prompt using Ollama with single-provider retry."""
+        """Invoke prompt with single retry."""
         if not self.current_llm:
             await self.get_llm(preferred_model=preferred_model)
 
         try:
             return await self.current_llm.ainvoke(prompt)
         except Exception as exc:
-            logger.warning("[MODEL] Current Ollama model invocation failed, reinitializing once: %s", exc)
+            logger.warning("[MODEL] Current model invocation failed, reinitializing once: %s", exc)
             self.current_llm = None
             await self.get_llm(preferred_model=preferred_model)
             return await self.current_llm.ainvoke(prompt)
@@ -230,13 +226,8 @@ class ModelManager:
         preferred_model: Optional[str] = None,
         max_tokens: Optional[int] = None,
     ):
-        """
-        Invoke messages using the model assigned to the given task.
-        """
-        if self.provider != "ollama":
-            raise RuntimeError(f"Unsupported provider '{self.provider}'. This service is configured for ollama only.")
-
-        selected_model = self._sanitize_model_name(preferred_model) or self._get_active_ollama_model()
-        llm = self._build_ollama(selected_model, max_tokens=max_tokens)
-        logger.info("[MODEL] Task '%s' provider=ollama model=%s max_tokens=%s", task, selected_model, max_tokens or self.max_tokens)
+        """Invoke messages using the model assigned to the given task."""
+        selected_model = self._sanitize_model_name(preferred_model) or self._get_active_model()
+        llm = self._build_llm(selected_model, max_tokens=max_tokens)
+        logger.info("[MODEL] Task '%s' provider=%s model=%s max_tokens=%s", task, self.provider, selected_model, max_tokens or self.max_tokens)
         return await llm.ainvoke(messages)
