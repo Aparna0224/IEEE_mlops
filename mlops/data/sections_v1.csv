@@ -1,0 +1,159 @@
+section_type,text,score,compliance,completeness,clarity,citation
+Abstract,This paper presents a novel approach to optimizing deep learning models for mobile devices. It reduces latency by 30% without sacrificing accuracy.,0.95,1.0,0.9,1.0,0.8
+Introduction,Deep learning has become ubiquitous. However mobile phones struggle with large neural networks.,0.85,1.0,0.8,0.9,0.7
+Methodology,Our method uses quantization. We convert 32-bit floats to 8-bit integers which shrinks the model size significantly but degrades performance if not calibrated.,0.90,1.0,0.9,0.9,0.9
+Results,The proposed method achieved 95% accuracy on ImageNet. Previous methods only got 92% latency was 15ms.,0.88,1.0,0.9,0.8,0.9
+Conclusion,In conclusion our approach is great. Future work will explore 4-bit.,0.75,0.8,0.7,0.8,0.5
+Conclusion,bad conclusion stuff lol.,0.20,0.1,0.2,0.3,0.1
+Methodology,method is good.,0.30,0.4,0.3,0.4,0.2
+Abstract,In this work we do things.,0.45,0.6,0.4,0.5,0.3
+Introduction,The experiments show that quantum computing can be useful sometimes. More research is needed.,0.65,0.66,0.47,0.45,0.57
+Abstract,The experiments show that NLP architectures can be useful sometimes. More research is needed.,0.46,0.6,0.57,0.56,0.6
+Methodology,The proposed methodology leverages edge computing to address existing limitations. Experimental results confirm the theoretical advantages.,0.9,0.91,0.99,0.97,0.83
+Methodology,We use 5G networks in our model. It works okay on the test dataset.,0.58,0.53,0.57,0.69,0.56
+Abstract,This paper explores edge computing to improve efficiency. Our novel approach yields a 25% improvement over baselines.,0.96,0.84,0.88,0.91,0.92
+Introduction,We use deep learning in our model. It works okay on the test dataset.,0.71,0.48,0.61,0.49,0.46
+Results,We use federated learning in our model. It works okay on the test dataset.,0.5,0.64,0.52,0.49,0.43
+Conclusion,We did quantum computing and it didn't really work lol.,0.11,0.28,0.27,0.14,0.25
+Introduction,"We introduce a robust framework for blockchain technology. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.96,0.82,0.96,0.83,0.85
+Methodology,In this study we looked at computer vision. It is somewhat better than previous methods.,0.58,0.64,0.52,0.52,0.56
+Methodology,The experiments show that edge computing can be useful sometimes. More research is needed.,0.44,0.49,0.55,0.59,0.52
+Methodology,The proposed methodology leverages federated learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.81,0.81,0.91,0.97,0.96
+Abstract,The proposed methodology leverages deep learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.79,0.95,0.89,0.86,0.95
+Results,The experiments show that deep learning can be useful sometimes. More research is needed.,0.6,0.67,0.45,0.63,0.67
+Methodology,This paper explores NLP architectures to improve efficiency. Our novel approach yields a 26% improvement over baselines.,0.95,0.87,0.96,0.96,0.83
+Methodology,We did cybersecurity and it didn't really work lol.,0.19,0.29,0.19,0.21,0.22
+Methodology,this paper is about quantum computing. very cool stuff.,0.18,0.27,0.24,0.13,0.11
+Conclusion,"We introduce a robust framework for computer vision. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.97,0.97,0.92,0.99,0.99
+Abstract,"We introduce a robust framework for computer vision. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.83,0.81,0.91,0.97,0.99
+Conclusion,In this study we looked at edge computing. It is somewhat better than previous methods.,0.73,0.58,0.47,0.42,0.64
+Methodology,"We introduce a robust framework for NLP architectures. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.85,0.83,0.89,0.83,0.96
+Abstract,This paper explores quantum computing to improve efficiency. Our novel approach yields a 25% improvement over baselines.,0.78,0.92,0.83,0.93,0.96
+Introduction,The proposed methodology leverages computer vision to address existing limitations. Experimental results confirm the theoretical advantages.,0.92,0.97,0.98,0.87,0.84
+Conclusion,"We introduce a robust framework for blockchain technology. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.75,0.81,0.87,0.85,0.8
+Conclusion,This paper explores blockchain technology to improve efficiency. Our novel approach yields a 41% improvement over baselines.,0.86,0.9,0.9,0.93,1.0
+Introduction,"We introduce a robust framework for deep learning. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.79,0.88,0.88,0.92,0.94
+Introduction,We did computer vision and it didn't really work lol.,0.19,0.18,0.26,0.17,0.13
+Results,"We introduce a robust framework for deep learning. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.93,0.81,0.83,0.95,0.91
+Conclusion,"We introduce a robust framework for computer vision. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.86,0.82,0.83,0.91,0.88
+Introduction,The proposed methodology leverages deep learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.84,0.98,0.98,0.88,0.89
+Methodology,This paper explores quantum computing to improve efficiency. Our novel approach yields a 33% improvement over baselines.,0.8,0.85,0.81,0.93,0.87
+Results,In this study we looked at federated learning. It is somewhat better than previous methods.,0.51,0.68,0.42,0.54,0.63
+Abstract,The experiments show that blockchain technology can be useful sometimes. More research is needed.,0.46,0.45,0.4,0.68,0.58
+Methodology,this paper is about 5G networks. very cool stuff.,0.18,0.21,0.25,0.29,0.12
+Conclusion,"We introduce a robust framework for edge computing. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.85,0.93,0.87,0.92,0.86
+Methodology,This paper explores blockchain technology to improve efficiency. Our novel approach yields a 46% improvement over baselines.,0.89,0.96,0.88,0.99,0.86
+Abstract,This paper explores federated learning to improve efficiency. Our novel approach yields a 50% improvement over baselines.,0.95,0.94,0.99,0.92,0.89
+Conclusion,We did quantum computing and it didn't really work lol.,0.12,0.17,0.19,0.29,0.11
+Results,"We introduce a robust framework for reinforcement learning. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.79,0.93,0.95,0.99,0.92
+Abstract,This paper explores blockchain technology to improve efficiency. Our novel approach yields a 44% improvement over baselines.,0.81,1.0,0.86,0.87,0.81
+Abstract,this paper is about reinforcement learning. very cool stuff.,0.34,0.15,0.28,0.11,0.28
+Methodology,We use reinforcement learning in our model. It works okay on the test dataset.,0.56,0.48,0.52,0.48,0.6
+Conclusion,The experiments show that cybersecurity can be useful sometimes. More research is needed.,0.45,0.43,0.69,0.41,0.45
+Methodology,"We introduce a robust framework for cybersecurity. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.92,0.93,0.99,0.92,0.88
+Introduction,"We introduce a robust framework for NLP architectures. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.85,0.91,0.85,0.95,0.87
+Methodology,"We introduce a robust framework for 5G networks. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.85,0.83,0.84,0.91,0.97
+Methodology,The experiments show that computer vision can be useful sometimes. More research is needed.,0.66,0.65,0.7,0.6,0.56
+Conclusion,this paper is about NLP architectures. very cool stuff.,0.33,0.24,0.17,0.23,0.25
+Results,"We introduce a robust framework for blockchain technology. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.78,0.9,0.94,0.94,0.92
+Methodology,The experiments show that edge computing can be useful sometimes. More research is needed.,0.57,0.58,0.66,0.42,0.54
+Conclusion,The proposed methodology leverages quantum computing to address existing limitations. Experimental results confirm the theoretical advantages.,0.85,0.85,0.84,0.96,0.85
+Abstract,The proposed methodology leverages blockchain technology to address existing limitations. Experimental results confirm the theoretical advantages.,0.95,0.82,0.88,0.88,0.84
+Abstract,"We introduce a robust framework for federated learning. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.76,0.97,0.85,0.86,0.9
+Abstract,The proposed methodology leverages deep learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.93,1.0,0.82,0.82,0.85
+Abstract,We use quantum computing in our model. It works okay on the test dataset.,0.66,0.68,0.67,0.42,0.58
+Introduction,This paper explores blockchain technology to improve efficiency. Our novel approach yields a 25% improvement over baselines.,0.84,0.87,0.97,0.94,0.95
+Results,We use federated learning in our model. It works okay on the test dataset.,0.61,0.42,0.63,0.42,0.64
+Introduction,"We introduce a robust framework for computer vision. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.81,0.84,0.93,0.99,0.88
+Introduction,This paper explores 5G networks to improve efficiency. Our novel approach yields a 34% improvement over baselines.,0.94,0.83,0.97,0.96,0.95
+Conclusion,"We introduce a robust framework for reinforcement learning. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.86,0.99,0.87,0.98,0.86
+Introduction,This paper explores reinforcement learning to improve efficiency. Our novel approach yields a 11% improvement over baselines.,0.92,0.81,0.97,0.87,0.92
+Methodology,"We introduce a robust framework for NLP architectures. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.79,0.82,0.99,0.93,0.91
+Results,This paper explores quantum computing to improve efficiency. Our novel approach yields a 41% improvement over baselines.,0.9,0.89,0.87,0.87,0.92
+Conclusion,"We introduce a robust framework for computer vision. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.8,0.85,0.98,0.95,0.89
+Results,In this study we looked at reinforcement learning. It is somewhat better than previous methods.,0.52,0.67,0.48,0.4,0.41
+Methodology,this paper is about blockchain technology. very cool stuff.,0.36,0.24,0.2,0.27,0.15
+Abstract,We did blockchain technology and it didn't really work lol.,0.26,0.21,0.19,0.16,0.14
+Methodology,In this study we looked at cybersecurity. It is somewhat better than previous methods.,0.7,0.63,0.6,0.57,0.4
+Conclusion,The proposed methodology leverages edge computing to address existing limitations. Experimental results confirm the theoretical advantages.,0.78,0.92,0.97,0.92,0.95
+Abstract,This paper explores blockchain technology to improve efficiency. Our novel approach yields a 22% improvement over baselines.,0.78,0.81,1.0,1.0,0.97
+Conclusion,The proposed methodology leverages edge computing to address existing limitations. Experimental results confirm the theoretical advantages.,0.89,0.99,0.81,0.86,0.92
+Methodology,The proposed methodology leverages NLP architectures to address existing limitations. Experimental results confirm the theoretical advantages.,0.98,0.91,0.96,0.99,0.93
+Results,The experiments show that deep learning can be useful sometimes. More research is needed.,0.73,0.68,0.69,0.54,0.65
+Methodology,The proposed methodology leverages blockchain technology to address existing limitations. Experimental results confirm the theoretical advantages.,0.89,0.81,0.91,0.87,0.95
+Methodology,bad results for cybersecurity. i don't know why.,0.16,0.2,0.24,0.29,0.22
+Methodology,The experiments show that cybersecurity can be useful sometimes. More research is needed.,0.52,0.61,0.63,0.59,0.52
+Abstract,The experiments show that edge computing can be useful sometimes. More research is needed.,0.65,0.51,0.46,0.59,0.45
+Conclusion,The proposed methodology leverages federated learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.95,0.87,0.83,0.92,0.93
+Abstract,This paper explores computer vision to improve efficiency. Our novel approach yields a 20% improvement over baselines.,0.78,0.91,0.92,0.97,0.82
+Abstract,The experiments show that edge computing can be useful sometimes. More research is needed.,0.48,0.53,0.51,0.43,0.41
+Introduction,We use federated learning in our model. It works okay on the test dataset.,0.7,0.4,0.54,0.67,0.59
+Methodology,We use cybersecurity in our model. It works okay on the test dataset.,0.55,0.47,0.44,0.42,0.66
+Conclusion,The proposed methodology leverages federated learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.85,0.94,0.89,0.8,0.95
+Methodology,The experiments show that computer vision can be useful sometimes. More research is needed.,0.45,0.62,0.41,0.47,0.69
+Abstract,The proposed methodology leverages cybersecurity to address existing limitations. Experimental results confirm the theoretical advantages.,0.82,0.94,0.87,0.97,0.85
+Results,We did blockchain technology and it didn't really work lol.,0.13,0.24,0.26,0.22,0.25
+Conclusion,We use reinforcement learning in our model. It works okay on the test dataset.,0.47,0.58,0.55,0.49,0.44
+Abstract,In this study we looked at computer vision. It is somewhat better than previous methods.,0.62,0.41,0.67,0.59,0.53
+Introduction,The proposed methodology leverages reinforcement learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.88,0.94,0.94,0.85,0.83
+Methodology,This paper explores NLP architectures to improve efficiency. Our novel approach yields a 23% improvement over baselines.,0.77,0.99,0.92,0.88,0.97
+Results,The proposed methodology leverages federated learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.81,0.93,0.97,0.98,0.89
+Methodology,"We introduce a robust framework for quantum computing. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.76,0.94,1.0,0.98,0.82
+Methodology,"We introduce a robust framework for quantum computing. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.96,0.83,0.99,0.95,0.98
+Introduction,In this study we looked at deep learning. It is somewhat better than previous methods.,0.45,0.47,0.54,0.46,0.57
+Conclusion,bad results for edge computing. i don't know why.,0.37,0.24,0.2,0.14,0.2
+Abstract,The proposed methodology leverages deep learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.85,1.0,0.91,0.96,0.89
+Results,The experiments show that deep learning can be useful sometimes. More research is needed.,0.43,0.58,0.67,0.41,0.61
+Abstract,This paper explores cybersecurity to improve efficiency. Our novel approach yields a 41% improvement over baselines.,0.97,0.98,0.99,0.84,0.83
+Methodology,In this study we looked at federated learning. It is somewhat better than previous methods.,0.45,0.6,0.59,0.63,0.46
+Conclusion,This paper explores reinforcement learning to improve efficiency. Our novel approach yields a 17% improvement over baselines.,0.78,0.94,0.87,0.95,0.8
+Methodology,The experiments show that federated learning can be useful sometimes. More research is needed.,0.7,0.68,0.41,0.59,0.63
+Methodology,The proposed methodology leverages computer vision to address existing limitations. Experimental results confirm the theoretical advantages.,0.92,0.86,0.91,0.89,0.84
+Abstract,The proposed methodology leverages cybersecurity to address existing limitations. Experimental results confirm the theoretical advantages.,0.81,0.91,0.96,0.95,0.82
+Results,bad results for blockchain technology. i don't know why.,0.23,0.12,0.1,0.29,0.25
+Introduction,We use edge computing in our model. It works okay on the test dataset.,0.62,0.69,0.68,0.67,0.63
+Abstract,The proposed methodology leverages blockchain technology to address existing limitations. Experimental results confirm the theoretical advantages.,0.88,0.91,0.95,1.0,0.86
+Introduction,We use computer vision in our model. It works okay on the test dataset.,0.58,0.62,0.42,0.55,0.57
+Abstract,We use computer vision in our model. It works okay on the test dataset.,0.55,0.55,0.45,0.68,0.69
+Conclusion,In this study we looked at 5G networks. It is somewhat better than previous methods.,0.58,0.59,0.61,0.6,0.64
+Methodology,This paper explores deep learning to improve efficiency. Our novel approach yields a 43% improvement over baselines.,0.79,0.95,0.96,0.84,0.8
+Methodology,We use NLP architectures in our model. It works okay on the test dataset.,0.41,0.48,0.67,0.48,0.48
+Conclusion,This paper explores blockchain technology to improve efficiency. Our novel approach yields a 42% improvement over baselines.,0.85,0.88,0.96,0.83,0.96
+Results,This paper explores deep learning to improve efficiency. Our novel approach yields a 22% improvement over baselines.,0.91,0.91,0.91,1.0,0.88
+Conclusion,We use edge computing in our model. It works okay on the test dataset.,0.51,0.54,0.52,0.67,0.66
+Methodology,"We introduce a robust framework for 5G networks. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.75,0.8,0.81,0.98,0.99
+Abstract,In this study we looked at edge computing. It is somewhat better than previous methods.,0.46,0.61,0.58,0.68,0.67
+Results,The experiments show that NLP architectures can be useful sometimes. More research is needed.,0.57,0.68,0.64,0.47,0.66
+Abstract,"We introduce a robust framework for 5G networks. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.75,0.84,0.81,0.96,0.91
+Conclusion,The proposed methodology leverages blockchain technology to address existing limitations. Experimental results confirm the theoretical advantages.,0.9,0.85,0.87,0.88,0.97
+Results,bad results for federated learning. i don't know why.,0.22,0.27,0.13,0.15,0.16
+Methodology,The proposed methodology leverages cybersecurity to address existing limitations. Experimental results confirm the theoretical advantages.,0.95,0.94,0.89,0.91,0.9
+Methodology,this paper is about reinforcement learning. very cool stuff.,0.25,0.18,0.11,0.16,0.15
+Introduction,"We introduce a robust framework for NLP architectures. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.75,0.82,0.84,0.87,0.94
+Conclusion,This paper explores computer vision to improve efficiency. Our novel approach yields a 44% improvement over baselines.,0.78,0.88,0.95,0.85,0.88
+Introduction,bad results for 5G networks. i don't know why.,0.33,0.24,0.13,0.22,0.29
+Abstract,"We introduce a robust framework for NLP architectures. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.94,0.82,0.8,0.82,0.83
+Methodology,The proposed methodology leverages blockchain technology to address existing limitations. Experimental results confirm the theoretical advantages.,0.87,0.97,0.82,0.95,0.94
+Introduction,this paper is about computer vision. very cool stuff.,0.22,0.26,0.13,0.28,0.2
+Conclusion,The proposed methodology leverages deep learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.77,0.82,0.89,0.97,0.96
+Introduction,In this study we looked at deep learning. It is somewhat better than previous methods.,0.69,0.57,0.66,0.41,0.47
+Results,This paper explores edge computing to improve efficiency. Our novel approach yields a 40% improvement over baselines.,0.97,0.8,0.91,1.0,0.88
+Methodology,this paper is about federated learning. very cool stuff.,0.22,0.14,0.3,0.2,0.13
+Conclusion,this paper is about edge computing. very cool stuff.,0.21,0.13,0.2,0.14,0.21
+Results,bad results for cybersecurity. i don't know why.,0.31,0.2,0.19,0.15,0.18
+Methodology,The experiments show that reinforcement learning can be useful sometimes. More research is needed.,0.73,0.46,0.56,0.42,0.45
+Abstract,The experiments show that cybersecurity can be useful sometimes. More research is needed.,0.45,0.62,0.45,0.59,0.52
+Methodology,bad results for NLP architectures. i don't know why.,0.39,0.19,0.29,0.16,0.3
+Results,The proposed methodology leverages reinforcement learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.85,0.83,0.92,0.96,0.97
+Introduction,This paper explores cybersecurity to improve efficiency. Our novel approach yields a 23% improvement over baselines.,0.88,0.93,0.95,0.93,0.84
+Methodology,In this study we looked at federated learning. It is somewhat better than previous methods.,0.73,0.69,0.55,0.4,0.46
+Methodology,The proposed methodology leverages reinforcement learning to address existing limitations. Experimental results confirm the theoretical advantages.,0.81,0.98,0.87,0.96,0.82
+Abstract,The proposed methodology leverages blockchain technology to address existing limitations. Experimental results confirm the theoretical advantages.,0.86,0.99,0.98,0.97,0.83
+Abstract,The proposed methodology leverages NLP architectures to address existing limitations. Experimental results confirm the theoretical advantages.,0.89,0.96,0.9,0.83,0.98
+Results,The experiments show that quantum computing can be useful sometimes. More research is needed.,0.65,0.5,0.42,0.44,0.55
+Introduction,bad results for 5G networks. i don't know why.,0.17,0.29,0.29,0.13,0.26
+Introduction,We did computer vision and it didn't really work lol.,0.37,0.14,0.29,0.17,0.11
+Abstract,"We introduce a robust framework for edge computing. Through extensive evaluation, we demonstrate superior performance in real-world scenarios.",0.85,0.95,0.92,0.92,0.9
+Introduction,this paper is about 5G networks. very cool stuff.,0.24,0.13,0.27,0.19,0.13
+Methodology,bad results for computer vision. i don't know why.,0.11,0.17,0.13,0.3,0.22
+Conclusion,bad results for reinforcement learning. i don't know why.,0.19,0.3,0.28,0.14,0.18

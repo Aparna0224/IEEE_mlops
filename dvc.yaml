@@ -1,0 +1,8 @@
+stages:
+  train_model:
+    cmd: python mlops/train.py
+    deps:
+      - mlops/train.py
+      - mlops/data/sections_v1.csv
+    outs:
+      - models/section_quality_xgboost.pkl

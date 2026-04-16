@@ -1,0 +1,36 @@
+# Backend Docker image — files excluded from build context
+.git
+.github
+.venv
+venv
+__pycache__
+*.pyc
+
+# Secrets — NEVER bake into the image
+.env
+.env.*
+
+# Frontend code — backend image doesn't need it
+nextjs-frontend/
+
+# Training data & MLflow experiment state
+*.csv
+mlruns/
+
+# Local logs & generated outputs
+logs/
+outputs/
+
+# Test suite — not needed at runtime
+tests/
+
+# Model pickle files excluded by default;
+# the CI job downloads the trained artifact before building the image.
+*.pkl
+!models/*.pkl
+
+# Misc
+*.db
+*.pdf
+*.md
+AI\ CALL\ INTELLIGENCE\ POSTER.pptx
