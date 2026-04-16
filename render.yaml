@@ -42,6 +42,6 @@ services:
       - key: NODE_ENV
         value: production
       # ⚠️  Set this to your backend's Render URL after backend is live:
-      #     e.g. https://ieee-backend.onrender.com
+      #     e.g. https://ieee-backend-latest.onrender.com
       - key: NEXT_PUBLIC_API_URL
         sync: false

@@ -147,7 +147,7 @@ jobs:
             ${{ env.FRONTEND_IMAGE }}:latest
             ${{ env.FRONTEND_IMAGE }}:${{ github.sha }}
           build-args: |
-            NEXT_PUBLIC_API_URL=https://ieee-backend.onrender.com
+            NEXT_PUBLIC_API_URL=https://ieee-backend-latest.onrender.com
           cache-from: type=gha,scope=frontend
           cache-to: type=gha,scope=frontend,mode=max
 
