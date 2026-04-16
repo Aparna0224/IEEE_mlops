@@ -14,8 +14,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -55,6 +55,8 @@ outputs/
 nextjs-frontend/node_modules/
 nextjs-frontend/.next/
 nextjs-frontend/out/
+# Allow Next.js src/lib folder (would be swallowed by /lib/ above without this)
+!nextjs-frontend/src/lib/
 
 # MLflow local state (not for version control)
 mlflow.db
