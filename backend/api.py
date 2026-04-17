@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 import sys
 sys.path.append(str(Path(__file__).parent.parent))
 
-from backend import langgraph_routes
+from backend import langgraph_routes, mlops_routes
 
 # Load environment variables
 load_dotenv()
@@ -49,6 +49,9 @@ app.add_middleware(
 
 # Include LangGraph paper generation routes
 app.include_router(langgraph_routes.router)
+
+# Include MLOps monitoring routes
+app.include_router(mlops_routes.router, prefix="/api/mlops", tags=["MLOps"])
 
 # In-memory storage for generation status
 generation_status = {}
